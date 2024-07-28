@@ -202,6 +202,9 @@ footer h5 {
     color: white;
     font-size: 25px;
 }
+.social-icons a:hover{
+transform: scale(1.1);
+}
 .f-icon{
     padding: 10px 20px;
 }
