@@ -7,6 +7,7 @@
 header {
     background-image: url('images/bg.jpg');
     background-size: cover;
+    background-position: center;
     height: 100vh;
     background-attachment: fixed;
 }
@@ -29,8 +30,10 @@ header {
     margin-top: 20px;
     color: white;
 }
-.modal-btn {
-    margin-top: 500px;
+.modal-btn{
+    position: absolute;
+    top: 600px;
+    left: 720px;
 }
 .modal-footer button {
     background-color: purple;
@@ -75,6 +78,10 @@ header {
     color: black;
     background-color: deepskyblue;
 }
+.video iframe{
+max-width: 100%;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 130px);
@@ -157,7 +164,7 @@ header {
     background-color: rgb(246, 246, 246);
 }
 
- .card-text {
+ .card-detail{
     color: darkmagenta;
 } 
 
@@ -210,13 +217,20 @@ transform: scale(1.1);
 }
 
 
-@media (max-width:582px){
+@media (max-width:560px){
     .main-heading{
         position: absolute;
-        left: 25%;
+        left: 30%;
     }
     .main-heading h1{
         font-size: 40px;
+    }
+    .modal-btn{
+        left: 35%;
+        top: 80%;
+    }
+    .gallery{
+        grid-template-columns: repeat(4, 70px);
     }
 footer{
     height: auto;
